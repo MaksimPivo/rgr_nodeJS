@@ -3,6 +3,8 @@ import {Routes, Route} from 'react-router-dom';
 import Login from './Login';
 import ProtectedRoute from "./ProtectedRoute";
 import Chart from "./Chart";
+import Cars from "../Api/Cars"
+import Fire from "../Api/Fire"
 
 function Main() {
 
@@ -20,6 +22,14 @@ function Main() {
                 <Route
                     path="/chart"
                     element={<Chart/>}
+                />
+                <Route
+                    path="/cars"
+                    element={<Cars/>}
+                />
+                <Route
+                    path="/fire"
+                    element={<Fire/>}
                 />
             </Routes>
         </div>
